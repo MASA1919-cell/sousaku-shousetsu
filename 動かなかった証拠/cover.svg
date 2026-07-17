@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="courtsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a1e2a"/>
+      <stop offset="0.5" stop-color="#2a2e3a"/>
+      <stop offset="1" stop-color="#3c3830"/>
+    </linearGradient>
+    <radialGradient id="lampglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8c878" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#e8c878" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pillar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4a4842"/>
+      <stop offset="0.5" stop-color="#65625a"/>
+      <stop offset="1" stop-color="#3a3832"/>
+    </linearGradient>
+    <linearGradient id="ground4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a2822"/>
+      <stop offset="1" stop-color="#14120e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 夜の背景 -->
+  <rect width="600" height="900" fill="url(#courtsky)"/>
+
+  <!-- 裁判所の柱(左右対称、重厚感) -->
+  <g>
+    <rect x="70" y="330" width="34" height="330" fill="url(#pillar)"/>
+    <rect x="160" y="330" width="34" height="330" fill="url(#pillar)"/>
+    <rect x="406" y="330" width="34" height="330" fill="url(#pillar)"/>
+    <rect x="496" y="330" width="34" height="330" fill="url(#pillar)"/>
+    <rect x="50" y="300" width="500" height="30" fill="#3a3832"/>
+    <path d="M50 300 L300 240 L550 300 Z" fill="#312f2a"/>
+  </g>
+
+  <!-- 天秤(タイトル上部モチーフ) -->
+  <g transform="translate(300 190)" stroke="#c9a24a" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="0" y1="-46" x2="0" y2="30"/>
+    <line x1="-70" y1="-30" x2="70" y2="-30"/>
+    <line x1="-70" y1="-30" x2="-70" y2="0"/>
+    <line x1="70" y1="-30" x2="70" y2="0"/>
+    <path d="M-92 0 Q-70 26 -48 0 Z" fill="#2a2822" stroke="#c9a24a" stroke-width="3"/>
+    <path d="M48 0 Q70 34 92 0 Z" fill="#2a2822" stroke="#c9a24a" stroke-width="3"/>
+    <circle cx="0" cy="-46" r="6" fill="#c9a24a"/>
+  </g>
+  <circle cx="300" cy="180" r="130" fill="url(#lampglow)" opacity="0.5"/>
+
+  <!-- 古い書類・写真のモチーフ -->
+  <g transform="translate(300 470) rotate(-4)">
+    <rect x="-70" y="-50" width="140" height="100" rx="2" fill="#e8dfc8" stroke="#8a7d5a" stroke-width="2"/>
+    <line x1="-52" y1="-24" x2="30" y2="-24" stroke="#9a8f70" stroke-width="3"/>
+    <line x1="-52" y1="-8" x2="42" y2="-8" stroke="#9a8f70" stroke-width="3"/>
+    <line x1="-52" y1="8" x2="20" y2="8" stroke="#9a8f70" stroke-width="3"/>
+    <line x1="-52" y1="24" x2="36" y2="24" stroke="#9a8f70" stroke-width="3"/>
+  </g>
+  <g transform="translate(360 500) rotate(8)">
+    <rect x="-46" y="-34" width="92" height="68" rx="2" fill="#d8cfb4" stroke="#7a6f52" stroke-width="2"/>
+    <rect x="-36" y="-24" width="72" height="48" fill="#8a8270" opacity="0.6"/>
+  </g>
+
+  <!-- 手前の地面 -->
+  <path d="M0 660 Q160 640 300 650 Q460 660 600 636 L600 900 L0 900 Z" fill="url(#ground4)"/>
+
+  <!-- 二人のシルエット(弁護士と依頼人、並んで立つ) -->
+  <g fill="#0f0e0b">
+    <circle cx="256" cy="700" r="14"/>
+    <path d="M244 718 q12 -10 24 0 l4 60 h-32 z"/>
+    <rect x="246" y="774" width="8" height="24" rx="3"/>
+    <rect x="260" y="774" width="8" height="24" rx="3"/>
+    <circle cx="344" cy="704" r="13"/>
+    <path d="M333 720 q11 -9 22 0 l4 56 h-30 z"/>
+    <rect x="335" y="772" width="7" height="22" rx="3"/>
+    <rect x="347" y="772" width="7" height="22" rx="3"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="100" text-anchor="middle" font-size="50" font-weight="bold" fill="#ece4d0" stroke="#14120e" stroke-width="8" paint-order="stroke" letter-spacing="4">動かなかった証拠</text>
+    <text x="300" y="620" text-anchor="middle" font-size="15" fill="#c9bfa0" stroke="#14120e" stroke-width="5" paint-order="stroke" letter-spacing="1">新人弁護士が十年越しの再審請求で辿り着いた、</text>
+    <text x="300" y="644" text-anchor="middle" font-size="15" fill="#c9bfa0" stroke="#14120e" stroke-width="5" paint-order="stroke" letter-spacing="1">黙殺された最後の証言</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="812" width="600" height="88" fill="#14120e" opacity="0.92"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#c9a24a" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#8a8270" letter-spacing="2">骨太の法廷ミステリ</text>
+</svg>

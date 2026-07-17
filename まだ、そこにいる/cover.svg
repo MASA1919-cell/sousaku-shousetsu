@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="dusksky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12151a"/>
+      <stop offset="0.5" stop-color="#232a28"/>
+      <stop offset="1" stop-color="#3a3a2e"/>
+    </linearGradient>
+    <radialGradient id="moonglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cfd8b8" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#cfd8b8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="windowlight" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e8c96a" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#e8c96a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c221f"/>
+      <stop offset="1" stop-color="#141814"/>
+    </linearGradient>
+    <linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d100e"/>
+      <stop offset="1" stop-color="#0a0c0a"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#20241f"/>
+      <stop offset="1" stop-color="#0e100e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 夕闇の空 -->
+  <rect width="600" height="900" fill="url(#dusksky)"/>
+  <circle cx="460" cy="180" r="130" fill="url(#moonglow)"/>
+  <circle cx="460" cy="180" r="36" fill="#dfe6c8" opacity="0.9"/>
+
+  <!-- 霧のかかった遠山 -->
+  <path d="M0 380 Q100 340 220 370 Q330 400 460 355 Q540 330 600 360 L600 500 L0 500 Z" fill="url(#mountain1)" opacity="0.9"/>
+  <path d="M0 430 Q120 400 260 425 Q380 448 500 410 Q560 395 600 415 L600 560 L0 560 Z" fill="url(#mountain2)"/>
+
+  <!-- 霧 -->
+  <g fill="#c9d2c0" opacity="0.14">
+    <ellipse cx="120" cy="470" rx="180" ry="30"/>
+    <ellipse cx="440" cy="500" rx="220" ry="34"/>
+    <ellipse cx="280" cy="530" rx="260" ry="28"/>
+  </g>
+
+  <!-- 鳥居(遠景・霧の中) -->
+  <g stroke="#4a2e2a" stroke-width="7" opacity="0.55" stroke-linecap="round">
+    <line x1="94" y1="470" x2="94" y2="410"/>
+    <line x1="150" y1="470" x2="150" y2="410"/>
+    <line x1="82" y1="410" x2="162" y2="410"/>
+    <line x1="86" y1="398" x2="158" y2="398"/>
+  </g>
+
+  <!-- 家(丘の上) -->
+  <g>
+    <path d="M230 470 L300 420 L370 470 L370 560 L230 560 Z" fill="#171a17"/>
+    <path d="M220 475 L300 415 L380 475 L370 470 L300 425 L230 470 Z" fill="#0f120f"/>
+    <!-- 灯りの点いた窓 -->
+    <circle cx="300" cy="510" r="42" fill="url(#windowlight)" opacity="0.7"/>
+    <rect x="282" y="495" width="36" height="34" rx="2" fill="#3a2f16" opacity="0.9"/>
+    <rect x="286" y="499" width="28" height="26" fill="#e8c96a" opacity="0.85"/>
+    <!-- 窓の中の小さな人影 -->
+    <path d="M300 512 q-6 -10 0 -16 q6 6 0 16 z" fill="#171a17" opacity="0.8"/>
+    <circle cx="300" cy="493" r="4" fill="#171a17" opacity="0.8"/>
+  </g>
+
+  <!-- 手前の地面と草 -->
+  <path d="M0 640 Q160 618 300 630 Q460 642 600 616 L600 900 L0 900 Z" fill="url(#ground)"/>
+  <!-- 家へ続く小道 -->
+  <path d="M300 630 Q294 660 288 690 Q280 720 268 750 Q258 775 244 800" fill="none" stroke="#161915" stroke-width="14" opacity="0.5" stroke-linecap="round"/>
+  <!-- 漂う霧 -->
+  <g fill="#c9d2c0" opacity="0.09">
+    <ellipse cx="150" cy="672" rx="150" ry="22"/>
+    <ellipse cx="460" cy="700" rx="180" ry="26"/>
+    <ellipse cx="260" cy="740" rx="220" ry="24"/>
+    <ellipse cx="90" cy="760" rx="130" ry="20"/>
+  </g>
+  <g stroke="#33392f" stroke-width="2.5" opacity="0.7" stroke-linecap="round">
+    <path d="M60 668 q4 -18 -2 -30"/>
+    <path d="M80 673 q6 -20 0 -34"/>
+    <path d="M104 670 q3 -14 -3 -24"/>
+    <path d="M496 663 q-4 -16 2 -28"/>
+    <path d="M520 670 q-6 -18 0 -30"/>
+    <path d="M544 665 q-4 -14 3 -24"/>
+    <path d="M150 780 q4 -16 -2 -28"/>
+    <path d="M420 790 q-4 -16 2 -26"/>
+  </g>
+
+  <!-- 写真立てと下駄のモチーフ -->
+  <g transform="translate(300 245)">
+    <g transform="rotate(-5)">
+      <rect x="-40" y="-52" width="80" height="96" rx="3" fill="#2a2620" stroke="#6b5a3a" stroke-width="3"/>
+      <rect x="-32" y="-44" width="64" height="72" fill="#8f8368" opacity="0.5"/>
+      <path d="M-20 -20 q20 -18 40 0 l0 30 q-20 14 -40 0 z" fill="#3a352a" opacity="0.7"/>
+    </g>
+    <!-- 小さな下駄 -->
+    <g transform="translate(-6 66)" fill="#241f18">
+      <ellipse cx="-14" cy="0" rx="16" ry="6"/>
+      <ellipse cx="18" cy="4" rx="16" ry="6"/>
+      <rect x="-19" y="-4" width="4" height="8"/>
+      <rect x="-9" y="-4" width="4" height="8"/>
+      <rect x="13" y="0" width="4" height="8"/>
+      <rect x="23" y="0" width="4" height="8"/>
+    </g>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="110" text-anchor="middle" font-size="52" font-weight="bold" fill="#e4ddc6" stroke="#0a0c0a" stroke-width="8" paint-order="stroke" letter-spacing="6">まだ、そこにいる</text>
+    <text x="300" y="700" text-anchor="middle" font-size="16" fill="#c7cdb8" stroke="#0a0c0a" stroke-width="5" paint-order="stroke" letter-spacing="1">特殊清掃員がたどり着く、二十年前から</text>
+    <text x="300" y="724" text-anchor="middle" font-size="16" fill="#c7cdb8" stroke="#0a0c0a" stroke-width="5" paint-order="stroke" letter-spacing="1">動けずにいる想いの物語</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="812" width="600" height="88" fill="#0a0c0a" opacity="0.92"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#c9a24a" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#8a9280" letter-spacing="2">シリアス・骨太のホラー怪異譚</text>
+</svg>

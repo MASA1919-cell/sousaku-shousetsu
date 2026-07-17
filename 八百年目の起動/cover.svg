@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1230"/>
+      <stop offset="0.55" stop-color="#1b2a5e"/>
+      <stop offset="0.8" stop-color="#4a3c7a"/>
+      <stop offset="1" stop-color="#b06a4a"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7d9"/>
+      <stop offset="0.7" stop-color="#f5e6a8"/>
+      <stop offset="1" stop-color="#f5e6a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="armor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a93a8"/>
+      <stop offset="1" stop-color="#525b70"/>
+    </linearGradient>
+    <linearGradient id="armorDark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b7488"/>
+      <stop offset="1" stop-color="#3d4557"/>
+    </linearGradient>
+    <linearGradient id="scale" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7e8f7a"/>
+      <stop offset="1" stop-color="#55654f"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd76e"/>
+      <stop offset="0.5" stop-color="#ffb63c" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#ffb63c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="lampGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="600" height="900" fill="url(#sky)"/>
+
+  <!-- 星 -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="80" r="1.6" opacity="0.9"/>
+    <circle cx="140" cy="150" r="1.2" opacity="0.7"/>
+    <circle cx="90" cy="260" r="1.4" opacity="0.8"/>
+    <circle cx="230" cy="90" r="1.2" opacity="0.6"/>
+    <circle cx="320" cy="170" r="1.5" opacity="0.8"/>
+    <circle cx="420" cy="70" r="1.3" opacity="0.7"/>
+    <circle cx="530" cy="140" r="1.6" opacity="0.9"/>
+    <circle cx="490" cy="250" r="1.2" opacity="0.6"/>
+    <circle cx="560" cy="330" r="1.4" opacity="0.7"/>
+    <circle cx="40" cy="380" r="1.2" opacity="0.6"/>
+    <circle cx="180" cy="320" r="1.1" opacity="0.5"/>
+    <circle cx="380" cy="300" r="1.3" opacity="0.6"/>
+  </g>
+
+  <!-- 月 -->
+  <circle cx="495" cy="265" r="100" fill="url(#moon)" opacity="0.9"/>
+  <circle cx="495" cy="265" r="56" fill="#f7ecc0"/>
+  <circle cx="477" cy="252" r="8" fill="#e8d9a0"/>
+  <circle cx="511" cy="281" r="6" fill="#e8d9a0"/>
+  <circle cx="495" cy="296" r="4" fill="#e8d9a0"/>
+
+  <!-- 遠景: 廃都のシルエット -->
+  <g fill="#141b3a">
+    <rect x="0" y="600" width="70" height="120"/>
+    <polygon points="70,720 70,570 95,545 120,570 120,720"/>
+    <rect x="130" y="620" width="45" height="100"/>
+    <rect x="440" y="590" width="60" height="130"/>
+    <polygon points="510,720 510,560 540,530 570,560 570,720"/>
+    <rect x="575" y="630" width="25" height="90"/>
+    <rect x="185" y="650" width="38" height="70"/>
+  </g>
+
+  <!-- 地面 -->
+  <rect x="0" y="700" width="600" height="200" fill="#241a2e"/>
+  <ellipse cx="300" cy="712" rx="340" ry="26" fill="#302040"/>
+
+  <!-- ゴーレム(ハチ) -->
+  <g>
+    <!-- 脚 -->
+    <rect x="245" y="560" width="42" height="130" rx="10" fill="url(#armorDark)"/>
+    <rect x="315" y="560" width="42" height="130" rx="10" fill="url(#armorDark)"/>
+    <rect x="238" y="672" width="56" height="30" rx="8" fill="#3d4557"/>
+    <rect x="308" y="672" width="56" height="30" rx="8" fill="#3d4557"/>
+    <!-- 胴 -->
+    <rect x="228" y="420" width="146" height="160" rx="26" fill="url(#armor)"/>
+    <!-- 胸の炉 -->
+    <circle cx="301" cy="490" r="26" fill="#2c3345"/>
+    <circle cx="301" cy="490" r="17" fill="#ffb63c"/>
+    <circle cx="301" cy="490" r="34" fill="url(#eyeGlow)" opacity="0.7"/>
+    <!-- 右腕(通常装甲) -->
+    <rect x="180" y="430" width="46" height="150" rx="18" fill="url(#armorDark)"/>
+    <rect x="176" y="565" width="52" height="44" rx="12" fill="#525b70"/>
+    <!-- 左腕(竜鱗の腕) -->
+    <rect x="376" y="430" width="46" height="150" rx="18" fill="url(#scale)"/>
+    <path d="M380 455 l18 10 l18 -10 M380 485 l18 10 l18 -10 M380 515 l18 10 l18 -10 M380 545 l18 10 l18 -10" stroke="#46543f" stroke-width="3" fill="none"/>
+    <rect x="372" y="565" width="52" height="44" rx="12" fill="#55654f"/>
+    <!-- 肩 -->
+    <rect x="196" y="404" width="76" height="46" rx="16" fill="#8a93a8"/>
+    <rect x="330" y="404" width="76" height="46" rx="16" fill="#7e8f7a"/>
+    <!-- 頭 -->
+    <rect x="262" y="340" width="78" height="72" rx="18" fill="url(#armor)"/>
+    <rect x="270" y="366" width="62" height="18" rx="8" fill="#2c3345"/>
+    <!-- 目(琥珀色) -->
+    <circle cx="287" cy="375" r="6" fill="#ffd76e"/>
+    <circle cx="315" cy="375" r="6" fill="#ffd76e"/>
+    <circle cx="287" cy="375" r="14" fill="url(#eyeGlow)"/>
+    <circle cx="315" cy="375" r="14" fill="url(#eyeGlow)"/>
+    <!-- 頭頂の意匠 -->
+    <rect x="290" y="326" width="22" height="14" rx="5" fill="#525b70"/>
+    <!-- 装甲の傷 -->
+    <path d="M250 450 l20 26 M352 530 l16 20 M240 540 l14 18" stroke="#3d4557" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- 少女(ミリィ) -->
+  <g>
+    <circle cx="435" cy="660" r="26" fill="url(#lampGlow)"/>
+    <!-- 体 -->
+    <path d="M448 640 q14 4 12 26 l-4 36 h-24 l-4 -36 q-2 -22 12 -26 z" fill="#a8552f"/>
+    <!-- 頭 -->
+    <circle cx="452" cy="626" r="15" fill="#f2c9a0"/>
+    <path d="M437 622 q2 -14 15 -14 q13 0 15 14 q-4 -6 -15 -6 q-11 0 -15 6 z" fill="#7a4a2a"/>
+    <!-- おさげ -->
+    <path d="M438 626 q-6 10 -4 20" stroke="#7a4a2a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M466 626 q6 10 4 20" stroke="#7a4a2a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <!-- ランプを掲げる腕 -->
+    <path d="M444 652 l-14 -8" stroke="#a8552f" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="427" cy="642" r="6" fill="#ffd76e"/>
+    <rect x="423" y="634" width="8" height="5" rx="2" fill="#7a5a2a"/>
+    <!-- 脚 -->
+    <rect x="440" y="700" width="8" height="16" rx="4" fill="#5a3a22"/>
+    <rect x="456" y="700" width="8" height="16" rx="4" fill="#5a3a22"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="120" text-anchor="middle" font-size="64" font-weight="bold" fill="#f7ecc0" stroke="#0b1230" stroke-width="8" paint-order="stroke" letter-spacing="4">八百年目の起動</text>
+    <text x="300" y="168" text-anchor="middle" font-size="21" fill="#e8d9a0" stroke="#0b1230" stroke-width="6" paint-order="stroke" letter-spacing="1">ガラクタと呼ばれた古代ゴーレム、</text>
+    <text x="300" y="198" text-anchor="middle" font-size="21" fill="#e8d9a0" stroke="#0b1230" stroke-width="6" paint-order="stroke" letter-spacing="1">少女を守って無双する</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="810" width="600" height="90" fill="#0b1230" opacity="0.85"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#ffd76e" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#c9c2e0" letter-spacing="2">人外の目が、人の心を学んでいく。爽快冒険譚</text>
+</svg>

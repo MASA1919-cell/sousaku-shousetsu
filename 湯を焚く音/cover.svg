@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="evesky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4a6b"/>
+      <stop offset="0.45" stop-color="#7a6a7a"/>
+      <stop offset="0.75" stop-color="#d68a5c"/>
+      <stop offset="1" stop-color="#f0b46a"/>
+    </linearGradient>
+    <radialGradient id="sunset" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe0a0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe0a0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="building" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5a4632"/>
+      <stop offset="1" stop-color="#3e2f20"/>
+    </linearGradient>
+    <radialGradient id="windowglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffdf9a" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffdf9a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3826"/>
+      <stop offset="1" stop-color="#2a1f16"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 夕焼け空 -->
+  <rect width="600" height="900" fill="url(#evesky)"/>
+  <circle cx="300" cy="230" r="150" fill="url(#sunset)"/>
+
+  <!-- 立ち上る湯気(タイトル上部) -->
+  <g fill="#fff4de" opacity="0.5">
+    <path d="M220 260 q-14 -40 8 -70 q-6 30 10 46 q14 -24 4 -54 q16 24 8 58 q10 -16 6 -34 q6 26 -8 58 z"/>
+    <path d="M380 250 q14 -36 -6 -66 q4 28 -10 42 q-12 -22 -4 -50 q-14 22 -8 54 q-8 -14 -6 -30 q-4 24 12 54 z"/>
+  </g>
+
+  <!-- 銭湯の建物 -->
+  <g>
+    <path d="M150 470 L150 620 L450 620 L450 470 L470 470 L300 400 L130 470 Z" fill="url(#building)"/>
+    <path d="M130 470 L300 400 L470 470 L450 470 L300 412 L150 470 Z" fill="#2e2216"/>
+    <!-- 煙突 -->
+    <rect x="410" y="330" width="20" height="100" fill="#3e2f20"/>
+    <ellipse cx="420" cy="330" rx="12" ry="5" fill="#5a4632"/>
+    <path d="M420 322 q-10 -22 4 -40 q-2 18 8 26 q6 -14 0 -30 q10 14 4 34" fill="#c9c2b8" opacity="0.35"/>
+    <!-- 暖簾 -->
+    <rect x="262" y="470" width="76" height="42" fill="#3a5a68" opacity="0.9"/>
+    <line x1="278" y1="470" x2="278" y2="512" stroke="#1f3138" stroke-width="2"/>
+    <line x1="300" y1="470" x2="300" y2="512" stroke="#1f3138" stroke-width="2"/>
+    <line x1="322" y1="470" x2="322" y2="512" stroke="#1f3138" stroke-width="2"/>
+    <text x="300" y="496" text-anchor="middle" font-family="'Yu Mincho',serif" font-size="16" fill="#f0e6d2">湯</text>
+    <!-- 窓の灯り -->
+    <circle cx="200" cy="530" r="30" fill="url(#windowglow)"/>
+    <rect x="186" y="516" width="28" height="26" rx="2" fill="#3a2f20" opacity="0.9"/>
+    <rect x="190" y="520" width="20" height="18" fill="#ffdf9a" opacity="0.85"/>
+    <circle cx="400" cy="530" r="30" fill="url(#windowglow)"/>
+    <rect x="386" y="516" width="28" height="26" rx="2" fill="#3a2f20" opacity="0.9"/>
+    <rect x="390" y="520" width="20" height="18" fill="#ffdf9a" opacity="0.85"/>
+  </g>
+
+  <!-- 手前の地面 -->
+  <path d="M0 660 Q150 640 300 650 Q460 660 600 636 L600 900 L0 900 Z" fill="url(#ground2)"/>
+
+  <!-- 親子と老婦人のシルエット -->
+  <g fill="#241a10">
+    <!-- 大人(結愛) -->
+    <circle cx="230" cy="700" r="14"/>
+    <path d="M218 718 q12 -10 24 0 l4 56 h-34 z"/>
+    <rect x="220" y="770" width="8" height="24" rx="3"/>
+    <rect x="234" y="770" width="8" height="24" rx="3"/>
+    <!-- 子供(そら) -->
+    <circle cx="264" cy="726" r="10"/>
+    <path d="M256 738 q8 -8 16 0 l3 40 h-22 z"/>
+    <rect x="258" y="776" width="6" height="18" rx="2"/>
+    <rect x="268" y="776" width="6" height="18" rx="2"/>
+    <!-- 老婦人(柳瀬さん・杖) -->
+    <circle cx="370" cy="704" r="13"/>
+    <path d="M359 720 q11 -9 22 0 l3 54 h-30 z"/>
+    <line x1="392" y1="726" x2="398" y2="792" stroke="#241a10" stroke-width="4" stroke-linecap="round"/>
+    <rect x="362" y="772" width="7" height="22" rx="3"/>
+    <rect x="374" y="772" width="7" height="22" rx="3"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="112" text-anchor="middle" font-size="54" font-weight="bold" fill="#fff4de" stroke="#2a1f16" stroke-width="8" paint-order="stroke" letter-spacing="5">湯を焚く音</text>
+    <text x="300" y="640" text-anchor="middle" font-size="16" fill="#5a4632" stroke="#fff4de" stroke-width="5" paint-order="stroke" letter-spacing="1">祖父の銭湯を継いだ三代目が見つけた、</text>
+    <text x="300" y="664" text-anchor="middle" font-size="16" fill="#5a4632" stroke="#fff4de" stroke-width="5" paint-order="stroke" letter-spacing="1">人と人をつなぐ湯加減</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="812" width="600" height="88" fill="#2a1f16" opacity="0.92"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#ffdf9a" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#c9a888" letter-spacing="2">温かな再生の物語、現代ヒューマンドラマ</text>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="stormsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e2038"/>
+      <stop offset="0.45" stop-color="#1c3a5a"/>
+      <stop offset="0.75" stop-color="#3f6a7a"/>
+      <stop offset="1" stop-color="#6a9a8a"/>
+    </linearGradient>
+    <radialGradient id="dataglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#7ee0ff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7ee0ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mtn1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16283a"/>
+      <stop offset="1" stop-color="#0e1a26"/>
+    </linearGradient>
+    <linearGradient id="mtn2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1420"/>
+      <stop offset="1" stop-color="#070d14"/>
+    </linearGradient>
+    <linearGradient id="ground3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#122436"/>
+      <stop offset="1" stop-color="#080f18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 二層の空(左:データの空、右:自然の空という対比) -->
+  <rect width="600" height="900" fill="url(#stormsky)"/>
+
+  <!-- 右半分:自然の雲 -->
+  <g fill="#e8f0ea" opacity="0.5">
+    <ellipse cx="440" cy="150" rx="90" ry="26"/>
+    <ellipse cx="500" cy="170" rx="70" ry="22"/>
+    <ellipse cx="380" cy="175" rx="60" ry="18"/>
+  </g>
+
+  <!-- 左半分:データのグリッドと解析線 -->
+  <g stroke="#7ee0ff" stroke-width="1" opacity="0.35">
+    <line x1="40" y1="60" x2="40" y2="300"/>
+    <line x1="80" y1="60" x2="80" y2="300"/>
+    <line x1="120" y1="60" x2="120" y2="300"/>
+    <line x1="160" y1="60" x2="160" y2="300"/>
+    <line x1="20" y1="90" x2="200" y2="90"/>
+    <line x1="20" y1="140" x2="200" y2="140"/>
+    <line x1="20" y1="190" x2="200" y2="190"/>
+    <line x1="20" y1="240" x2="200" y2="240"/>
+  </g>
+  <polyline points="30,240 60,190 90,210 120,130 150,160 180,90" fill="none" stroke="#a0f0ff" stroke-width="3" opacity="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="130" cy="175" r="70" fill="url(#dataglow)"/>
+
+  <!-- 遠山 -->
+  <path d="M0 420 Q100 380 220 410 Q330 440 460 390 Q540 365 600 395 L600 520 L0 520 Z" fill="url(#mtn1)"/>
+  <path d="M0 470 Q120 445 260 465 Q380 483 500 455 Q560 442 600 460 L600 560 L0 560 Z" fill="url(#mtn2)"/>
+
+  <!-- 観測小屋 -->
+  <g>
+    <path d="M240 500 L300 460 L360 500 L360 560 L240 560 Z" fill="#1a2c3e"/>
+    <path d="M232 504 L300 456 L368 504 L360 500 L300 462 L240 500 Z" fill="#0e1b28"/>
+    <rect x="270" y="520" width="20" height="40" fill="#0a141e"/>
+    <!-- 風向計 -->
+    <line x1="300" y1="456" x2="300" y2="420" stroke="#7ee0ff" stroke-width="2"/>
+    <path d="M300 420 l14 8 l-14 4 z" fill="#7ee0ff" opacity="0.9"/>
+    <circle cx="300" cy="420" r="3" fill="#a0f0ff"/>
+  </g>
+
+  <!-- 手前の地面 -->
+  <path d="M0 640 Q160 618 300 630 Q460 642 600 616 L600 900 L0 900 Z" fill="url(#ground3)"/>
+
+  <!-- 見上げる人物のシルエット -->
+  <g fill="#0a141e">
+    <circle cx="300" cy="700" r="15"/>
+    <path d="M286 720 q14 -12 28 0 l4 62 h-36 z"/>
+    <path d="M296 706 Q288 686 300 672" stroke="#0a141e" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <rect x="288" y="778" width="9" height="26" rx="4"/>
+    <rect x="304" y="778" width="9" height="26" rx="4"/>
+  </g>
+  <!-- 見上げる視線の先の光の粒(データと星の中間的モチーフ) -->
+  <g fill="#a0f0ff">
+    <circle cx="300" cy="640" r="3" opacity="0.9"/>
+    <circle cx="320" cy="600" r="2.6" opacity="0.8"/>
+    <circle cx="280" cy="590" r="2.4" opacity="0.75"/>
+    <circle cx="330" cy="550" r="2.2" opacity="0.7"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="108" text-anchor="middle" font-size="54" font-weight="bold" fill="#eaf6f2" stroke="#0a1420" stroke-width="8" paint-order="stroke" letter-spacing="5">風を読む仕事</text>
+    <text x="300" y="352" text-anchor="middle" font-size="15" fill="#bfe6da" stroke="#0a1420" stroke-width="5" paint-order="stroke" letter-spacing="1">人工知能が外さない時代に、あえて空を見上げる</text>
+    <text x="300" y="376" text-anchor="middle" font-size="15" fill="#bfe6da" stroke="#0a1420" stroke-width="5" paint-order="stroke" letter-spacing="1">気象予報士が証明した「勘」の価値</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="812" width="600" height="88" fill="#0a1420" opacity="0.92"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#a0f0ff" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#7a9a92" letter-spacing="2">人と機械が空を見つめる、近未来科学空想</text>
+</svg>

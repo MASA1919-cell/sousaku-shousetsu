@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141b33"/>
+      <stop offset="0.6" stop-color="#1d2947"/>
+      <stop offset="1" stop-color="#2a3a54"/>
+    </linearGradient>
+    <radialGradient id="moonglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f7ecc9" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f7ecc9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lantern" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c76a"/>
+      <stop offset="1" stop-color="#e08a3c"/>
+    </linearGradient>
+    <radialGradient id="lanternglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f6c76a" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f6c76a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 夜空 -->
+  <rect x="0" y="0" width="600" height="900" fill="url(#night)"/>
+
+  <!-- 星 -->
+  <g fill="#e8e2cf">
+    <circle cx="60" cy="80" r="1.4" opacity="0.7"/>
+    <circle cx="130" cy="50" r="1.1" opacity="0.5"/>
+    <circle cx="90" cy="180" r="1.2" opacity="0.6"/>
+    <circle cx="40" cy="300" r="1.0" opacity="0.5"/>
+    <circle cx="200" cy="90" r="1.5" opacity="0.7"/>
+    <circle cx="260" cy="160" r="1.0" opacity="0.4"/>
+    <circle cx="330" cy="60" r="1.3" opacity="0.6"/>
+    <circle cx="550" cy="620" r="1.2" opacity="0.5"/>
+    <circle cx="80" cy="520" r="1.1" opacity="0.5"/>
+    <circle cx="160" cy="420" r="1.0" opacity="0.4"/>
+  </g>
+
+  <!-- 満月と光 -->
+  <circle cx="185" cy="250" r="160" fill="url(#moonglow)"/>
+  <circle cx="185" cy="250" r="92" fill="#f3e6bc"/>
+  <circle cx="155" cy="225" r="14" fill="#e6d5a4" opacity="0.6"/>
+  <circle cx="205" cy="275" r="10" fill="#e6d5a4" opacity="0.5"/>
+  <circle cx="215" cy="230" r="6" fill="#e6d5a4" opacity="0.5"/>
+
+  <!-- 嵩山のシルエット -->
+  <path d="M0 560 L120 400 L210 500 L320 370 L450 520 L600 430 L600 900 L0 900 Z" fill="#111827"/>
+
+  <!-- 月を仰ぐ白い狼(山の稜線上) -->
+  <g transform="translate(285 322)">
+    <!-- 尾 -->
+    <path d="M-38 58 C-64 52 -78 34 -74 12 C-62 28 -50 36 -34 40 Z" fill="#ece8dd"/>
+    <!-- 体(お座り) -->
+    <path d="M-36 62 C-38 30 -20 6 4 -6 C10 -22 22 -34 36 -38 L42 -24 L52 -30 C58 -18 56 -6 46 4 C54 26 46 48 30 62 Z" fill="#f4f1e8"/>
+    <!-- 耳 -->
+    <path d="M34 -37 L30 -52 L42 -42 Z" fill="#f4f1e8"/>
+    <path d="M44 -31 L54 -44 L52 -28 Z" fill="#f4f1e8"/>
+    <!-- 前脚 -->
+    <path d="M20 60 L22 30 L32 32 L34 62 Z" fill="#f4f1e8"/>
+  </g>
+
+  <!-- タイトル(縦書き・一文字ずつ) -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" fill="#f2ead9" text-anchor="middle" font-weight="600">
+    <text x="480" y="140" font-size="76">百</text>
+    <text x="480" y="228" font-size="76">年</text>
+    <text x="480" y="316" font-size="76">貸</text>
+    <text x="480" y="404" font-size="76">し</text>
+    <text x="480" y="492" font-size="76">ま</text>
+    <text x="480" y="580" font-size="76">す</text>
+  </g>
+  <!-- 落款風の朱印 -->
+  <g>
+    <rect x="456" y="612" width="48" height="48" rx="6" fill="#b0392b"/>
+    <text x="480" y="646" font-size="26" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" fill="#f2ead9" text-anchor="middle">琴</text>
+  </g>
+
+  <!-- 店先: 屋根 -->
+  <path d="M20 700 L330 700 L310 668 L40 668 Z" fill="#3a2e26"/>
+  <rect x="36" y="700" width="278" height="150" fill="#2c241e"/>
+  <!-- 暖簾 -->
+  <g>
+    <rect x="60" y="700" width="70" height="92" fill="#274a6d"/>
+    <rect x="140" y="700" width="70" height="92" fill="#274a6d"/>
+    <rect x="220" y="700" width="70" height="92" fill="#274a6d"/>
+    <text x="95" y="760" font-size="30" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" fill="#f2ead9" text-anchor="middle">九</text>
+    <text x="175" y="760" font-size="30" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" fill="#f2ead9" text-anchor="middle">十</text>
+    <text x="255" y="760" font-size="30" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" fill="#f2ead9" text-anchor="middle">九</text>
+  </g>
+  <!-- 提灯 -->
+  <circle cx="330" cy="742" r="60" fill="url(#lanternglow)"/>
+  <g>
+    <line x1="330" y1="688" x2="330" y2="700" stroke="#3a2e26" stroke-width="3"/>
+    <ellipse cx="330" cy="734" rx="26" ry="34" fill="url(#lantern)"/>
+    <path d="M310 716 Q330 722 350 716" stroke="#b06a2c" stroke-width="1.4" fill="none"/>
+    <path d="M307 730 Q330 737 353 730" stroke="#b06a2c" stroke-width="1.4" fill="none"/>
+    <path d="M310 748 Q330 754 350 748" stroke="#b06a2c" stroke-width="1.4" fill="none"/>
+    <rect x="320" y="698" width="20" height="7" rx="2" fill="#3a2e26"/>
+    <rect x="320" y="764" width="20" height="7" rx="2" fill="#3a2e26"/>
+  </g>
+  <!-- 店先の琴(立てかけ) -->
+  <g transform="translate(392 760) rotate(-18)">
+    <rect x="0" y="0" width="120" height="26" rx="12" fill="#8a5a2b"/>
+    <line x1="14" y1="4" x2="108" y2="4" stroke="#e8d9b0" stroke-width="1"/>
+    <line x1="14" y1="9" x2="108" y2="9" stroke="#e8d9b0" stroke-width="1"/>
+    <line x1="14" y1="14" x2="108" y2="14" stroke="#e8d9b0" stroke-width="1"/>
+    <line x1="14" y1="19" x2="108" y2="19" stroke="#e8d9b0" stroke-width="1"/>
+  </g>
+
+  <!-- サブタイトルと話数 -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" text-anchor="middle">
+    <text x="300" y="826" font-size="21" fill="#e6b57a" letter-spacing="3">あわい町の損料屋・九十九屋人情帖</text>
+    <text x="300" y="868" font-size="24" fill="#f2ead9" letter-spacing="8">全10話・完結</text>
+  </g>
+
+  <!-- 額縁 -->
+  <rect x="10" y="10" width="580" height="880" fill="none" stroke="#e6b57a" stroke-width="2" opacity="0.5" rx="6"/>
+</svg>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a1430"/>
+      <stop offset="0.55" stop-color="#20213f"/>
+      <stop offset="1" stop-color="#5a3446"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8a3320"/>
+      <stop offset="0.5" stop-color="#7c3a24"/>
+      <stop offset="1" stop-color="#6e3a22"/>
+    </linearGradient>
+    <radialGradient id="greening" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#4f9a52" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#3c7a44" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#3c7a44" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet2" cx="0.35" cy="0.35" r="0.8">
+      <stop offset="0" stop-color="#c96a44"/>
+      <stop offset="0.6" stop-color="#8a3f2a"/>
+      <stop offset="1" stop-color="#4a2418"/>
+    </radialGradient>
+    <radialGradient id="sproutGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#bff29a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#bff29a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fd06a"/>
+      <stop offset="1" stop-color="#3f8e46"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 空 -->
+  <rect x="0" y="0" width="600" height="900" fill="url(#sky)"/>
+
+  <!-- 星 -->
+  <g fill="#f4ece0">
+    <circle cx="70" cy="70" r="1.6" opacity="0.8"/>
+    <circle cx="150" cy="110" r="1.1" opacity="0.6"/>
+    <circle cx="240" cy="60" r="1.8" opacity="0.9"/>
+    <circle cx="330" cy="95" r="1.0" opacity="0.5"/>
+    <circle cx="430" cy="55" r="1.5" opacity="0.8"/>
+    <circle cx="520" cy="105" r="1.2" opacity="0.7"/>
+    <circle cx="560" cy="60" r="1.7" opacity="0.85"/>
+    <circle cx="500" cy="180" r="1.0" opacity="0.5"/>
+    <circle cx="60" cy="200" r="1.3" opacity="0.6"/>
+    <circle cx="120" cy="300" r="1.1" opacity="0.5"/>
+    <circle cx="560" cy="250" r="1.4" opacity="0.7"/>
+    <circle cx="390" cy="150" r="1.0" opacity="0.5"/>
+    <circle cx="285" cy="200" r="1.2" opacity="0.55"/>
+  </g>
+
+  <!-- 遠い赤い星(次の星) -->
+  <circle cx="105" cy="255" r="40" fill="url(#planet2)" opacity="0.9"/>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" text-anchor="middle">
+    <text x="300" y="168" font-size="96" fill="#f6efe2" letter-spacing="6" font-weight="600">星を蒔く</text>
+    <text x="300" y="230" font-size="25" fill="#e6b57a" letter-spacing="4">赤い惑星に、はじめての春を</text>
+  </g>
+
+  <!-- 雲 -->
+  <g fill="#3c3a52" opacity="0.9">
+    <ellipse cx="300" cy="322" rx="120" ry="30"/>
+    <ellipse cx="240" cy="330" rx="70" ry="26"/>
+    <ellipse cx="368" cy="332" rx="72" ry="26"/>
+  </g>
+  <g fill="#4a4763" opacity="0.7">
+    <ellipse cx="300" cy="312" rx="96" ry="24"/>
+  </g>
+
+  <!-- 雨 -->
+  <g stroke="#a8cbe0" stroke-width="2" stroke-linecap="round" opacity="0.65">
+    <line x1="235" y1="360" x2="228" y2="430"/>
+    <line x1="270" y1="368" x2="262" y2="452"/>
+    <line x1="305" y1="360" x2="297" y2="440"/>
+    <line x1="340" y1="370" x2="332" y2="456"/>
+    <line x1="375" y1="362" x2="367" y2="436"/>
+    <line x1="205" y1="372" x2="199" y2="428"/>
+    <line x1="405" y1="372" x2="398" y2="432"/>
+  </g>
+
+  <!-- 地面(赤) -->
+  <path d="M0 500 Q150 470 300 486 Q450 500 600 476 L600 900 L0 900 Z" fill="url(#ground)"/>
+  <!-- 星苔の緑(中央から広がる) -->
+  <ellipse cx="300" cy="720" rx="330" ry="230" fill="url(#greening)"/>
+
+  <!-- 手前の丘(緑がかった赤) -->
+  <path d="M0 640 Q160 590 300 626 Q460 660 600 610 L600 900 L0 900 Z" fill="#5c3a24" opacity="0.85"/>
+  <path d="M0 740 Q180 700 300 728 Q440 752 600 716 L600 900 L0 900 Z" fill="#3f6b3c" opacity="0.9"/>
+
+  <!-- 新芽 -->
+  <ellipse cx="300" cy="628" rx="110" ry="90" fill="url(#sproutGlow)"/>
+  <g>
+    <path d="M300 660 C300 620 300 590 300 560" stroke="#3f8e46" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M300 596 C270 576 244 582 224 604 C252 616 286 616 300 600 Z" fill="url(#leaf)"/>
+    <path d="M300 582 C330 560 358 566 380 588 C350 602 314 600 300 584 Z" fill="url(#leaf)"/>
+    <path d="M300 566 C286 540 288 516 300 496 C314 516 316 540 300 566 Z" fill="url(#leaf)"/>
+  </g>
+  <!-- 芽の根元の土 -->
+  <ellipse cx="300" cy="662" rx="34" ry="9" fill="#2c4d2b"/>
+
+  <!-- 下部の帯 -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" text-anchor="middle">
+    <text x="300" y="866" font-size="26" fill="#f2ead9" letter-spacing="8">全10話・完結</text>
+  </g>
+
+  <!-- 額縁 -->
+  <rect x="10" y="10" width="580" height="880" fill="none" stroke="#e6b57a" stroke-width="2" opacity="0.5" rx="6"/>
+</svg>
