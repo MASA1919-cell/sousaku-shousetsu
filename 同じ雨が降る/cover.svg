@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="rainsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0e13"/>
+      <stop offset="0.45" stop-color="#141c24"/>
+      <stop offset="1" stop-color="#1e2830"/>
+    </linearGradient>
+    <linearGradient id="wetground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232d35"/>
+      <stop offset="1" stop-color="#0c1116"/>
+    </linearGradient>
+    <radialGradient id="clockglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#9fb6c4" stop-opacity="0.20"/>
+      <stop offset="0.7" stop-color="#9fb6c4" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#9fb6c4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stairlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f0d79a" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#c9a662" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#5c4626" stop-opacity="0.35"/>
+    </linearGradient>
+    <radialGradient id="mouthglow" cx="0.5" cy="0.15" r="0.85">
+      <stop offset="0" stop-color="#f4dda6" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f4dda6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 雨の夜空 -->
+  <rect width="600" height="900" fill="url(#rainsky)"/>
+
+  <!-- 湾のクレーン(造船の町) -->
+  <g stroke="#0a0f14" stroke-width="5" fill="none" opacity="0.9" stroke-linecap="square">
+    <path d="M52 560 L52 452 M32 452 L118 452 M52 452 L96 490 M96 452 L96 470"/>
+    <path d="M150 560 L150 470 M132 470 L206 470 M150 470 L188 502 M188 470 L188 486"/>
+    <path d="M470 560 L470 462 M450 462 L534 462 M470 462 L512 498 M512 462 L512 478"/>
+  </g>
+
+  <!-- 遠景のビル群 -->
+  <g fill="#0b1015" opacity="0.95">
+    <rect x="0" y="500" width="70" height="60"/>
+    <rect x="82" y="516" width="54" height="44"/>
+    <rect x="196" y="492" width="62" height="68"/>
+    <rect x="266" y="520" width="46" height="40"/>
+    <rect x="322" y="486" width="58" height="74"/>
+    <rect x="392" y="512" width="50" height="48"/>
+    <rect x="524" y="498" width="76" height="62"/>
+  </g>
+  <!-- ビルの窓明かり -->
+  <g fill="#d8c489" opacity="0.5">
+    <rect x="12" y="512" width="7" height="9"/><rect x="30" y="528" width="7" height="9"/>
+    <rect x="208" y="504" width="7" height="9"/><rect x="228" y="522" width="7" height="9"/>
+    <rect x="336" y="498" width="7" height="9"/><rect x="354" y="518" width="7" height="9"/>
+    <rect x="336" y="538" width="7" height="9"/>
+    <rect x="540" y="510" width="7" height="9"/><rect x="562" y="530" width="7" height="9"/>
+  </g>
+
+  <!-- 濡れた地面 -->
+  <rect x="0" y="558" width="600" height="342" fill="url(#wetground)"/>
+  <g fill="#8fa6b4" opacity="0.06">
+    <rect x="0" y="558" width="600" height="4"/>
+    <rect x="60" y="566" width="10" height="120"/>
+    <rect x="210" y="566" width="8" height="96"/>
+    <rect x="352" y="566" width="9" height="110"/>
+    <rect x="530" y="566" width="11" height="130"/>
+  </g>
+
+  <!-- 地下街への降り口 -->
+  <g>
+    <ellipse cx="300" cy="620" rx="132" ry="80" fill="url(#mouthglow)"/>
+    <path d="M236 622 L364 622 L390 742 L210 742 Z" fill="#080b0e"/>
+    <path d="M244 630 L356 630 L378 734 L222 734 Z" fill="url(#stairlight)"/>
+    <rect x="244" y="630" width="112" height="4" fill="#fdf1cf" opacity="0.85"/>
+    <!-- 階段 -->
+    <g stroke="#2b2418" stroke-width="3" opacity="0.5">
+      <line x1="247" y1="650" x2="353" y2="650"/>
+      <line x1="251" y1="670" x2="349" y2="670"/>
+      <line x1="255" y1="690" x2="345" y2="690"/>
+      <line x1="259" y1="710" x2="341" y2="710"/>
+    </g>
+    <!-- 手すり -->
+    <g stroke="#141a20" stroke-width="7" stroke-linecap="round">
+      <line x1="236" y1="618" x2="210" y2="738"/>
+      <line x1="364" y1="618" x2="390" y2="738"/>
+    </g>
+    <!-- 明かりに照らされた雨 -->
+    <g stroke="#ffeec2" stroke-width="1.2" opacity="0.28" stroke-linecap="round">
+      <line x1="256" y1="548" x2="245" y2="594"/>
+      <line x1="352" y1="540" x2="341" y2="586"/>
+      <line x1="382" y1="572" x2="371" y2="618"/>
+      <line x1="228" y1="580" x2="217" y2="626"/>
+    </g>
+    <!-- 傘をさして降り口に立つ人影 -->
+    <g fill="#080b0e">
+      <ellipse cx="300" cy="616" rx="20" ry="6" opacity="0.55"/>
+      <!-- 傘 -->
+      <path d="M276 532 Q314 490 352 532 Q333 521 314 531 Q295 521 276 532 Z"/>
+      <path d="M312 526 L304 578 l5 1 l8 -52 z"/>
+      <!-- 体 -->
+      <path d="M286 616 L290 578 Q287 560 300 556 Q313 560 310 578 L314 616 Z"/>
+      <circle cx="300" cy="546" r="9"/>
+      <!-- 傘を持つ腕 -->
+      <path d="M303 574 L310 576 L312 571 L305 569 Z"/>
+    </g>
+  </g>
+
+  <!-- 六時四十一分の時計(空に浮かぶ) -->
+  <g transform="translate(300 322)">
+    <circle r="150" fill="url(#clockglow)"/>
+    <circle r="116" fill="none" stroke="#93a9b8" stroke-width="3" opacity="0.5"/>
+    <circle r="106" fill="none" stroke="#93a9b8" stroke-width="1" opacity="0.28"/>
+    <g stroke="#a8bcc9" stroke-width="4" opacity="0.45" stroke-linecap="round">
+      <line x1="0" y1="-104" x2="0" y2="-88"/>
+      <line x1="104" y1="0" x2="88" y2="0"/>
+      <line x1="0" y1="104" x2="0" y2="88"/>
+      <line x1="-104" y1="0" x2="-88" y2="0"/>
+    </g>
+    <g stroke="#a8bcc9" stroke-width="2" opacity="0.3" stroke-linecap="round">
+      <line x1="53" y1="-92" x2="45" y2="-78"/>
+      <line x1="92" y1="-53" x2="78" y2="-45"/>
+      <line x1="92" y1="53" x2="78" y2="45"/>
+      <line x1="53" y1="92" x2="45" y2="78"/>
+      <line x1="-53" y1="92" x2="-45" y2="78"/>
+      <line x1="-92" y1="53" x2="-78" y2="45"/>
+      <line x1="-92" y1="-53" x2="-78" y2="-45"/>
+      <line x1="-53" y1="-92" x2="-45" y2="-78"/>
+    </g>
+    <!-- 短針(六時四十一分) -->
+    <line x1="0" y1="0" x2="-24" y2="66" stroke="#dbe6ee" stroke-width="7" stroke-linecap="round" opacity="0.85"/>
+    <!-- 長針 -->
+    <line x1="0" y1="0" x2="-96" y2="43" stroke="#dbe6ee" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+    <circle r="6" fill="#dbe6ee" opacity="0.9"/>
+  </g>
+
+  <!-- 雨 -->
+  <g stroke="#b9cddb" stroke-width="1.4" opacity="0.28" stroke-linecap="round">
+    <line x1="18" y1="-10" x2="4" y2="52"/><line x1="72" y1="30" x2="58" y2="92"/>
+    <line x1="126" y1="-20" x2="112" y2="42"/><line x1="168" y1="60" x2="154" y2="122"/>
+    <line x1="214" y1="10" x2="200" y2="72"/><line x1="262" y1="80" x2="248" y2="142"/>
+    <line x1="308" y1="-14" x2="294" y2="48"/><line x1="352" y1="46" x2="338" y2="108"/>
+    <line x1="404" y1="6" x2="390" y2="68"/><line x1="452" y1="66" x2="438" y2="128"/>
+    <line x1="498" y1="-6" x2="484" y2="56"/><line x1="546" y1="38" x2="532" y2="100"/>
+    <line x1="584" y1="90" x2="570" y2="152"/><line x1="40" y1="120" x2="26" y2="182"/>
+    <line x1="96" y1="160" x2="82" y2="222"/><line x1="146" y1="200" x2="132" y2="262"/>
+    <line x1="200" y1="150" x2="186" y2="212"/><line x1="248" y1="230" x2="234" y2="292"/>
+    <line x1="300" y1="180" x2="286" y2="242"/><line x1="356" y1="250" x2="342" y2="312"/>
+    <line x1="410" y1="176" x2="396" y2="238"/><line x1="466" y1="240" x2="452" y2="302"/>
+    <line x1="516" y1="150" x2="502" y2="212"/><line x1="566" y1="210" x2="552" y2="272"/>
+    <line x1="24" y1="270" x2="10" y2="332"/><line x1="86" y1="320" x2="72" y2="382"/>
+    <line x1="140" y1="360" x2="126" y2="422"/><line x1="196" y1="300" x2="182" y2="362"/>
+    <line x1="256" y1="380" x2="242" y2="442"/><line x1="330" y1="352" x2="316" y2="414"/>
+    <line x1="404" y1="330" x2="390" y2="392"/><line x1="470" y1="392" x2="456" y2="454"/>
+    <line x1="528" y1="300" x2="514" y2="362"/><line x1="580" y1="360" x2="566" y2="422"/>
+    <line x1="46" y1="420" x2="32" y2="482"/><line x1="118" y1="450" x2="104" y2="512"/>
+    <line x1="182" y1="430" x2="168" y2="492"/><line x1="268" y1="470" x2="254" y2="532"/>
+    <line x1="368" y1="440" x2="354" y2="502"/><line x1="446" y1="480" x2="432" y2="542"/>
+    <line x1="512" y1="440" x2="498" y2="502"/><line x1="572" y1="470" x2="558" y2="532"/>
+    <line x1="30" y1="560" x2="16" y2="622"/><line x1="112" y1="600" x2="98" y2="662"/>
+    <line x1="166" y1="580" x2="152" y2="642"/><line x1="440" y1="590" x2="426" y2="652"/>
+    <line x1="498" y1="620" x2="484" y2="682"/><line x1="558" y1="576" x2="544" y2="638"/>
+    <line x1="76" y1="680" x2="62" y2="742"/><line x1="150" y1="716" x2="136" y2="778"/>
+    <line x1="466" y1="700" x2="452" y2="762"/><line x1="536" y1="670" x2="522" y2="732"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN',serif">
+    <text x="300" y="112" text-anchor="middle" font-size="56" font-weight="bold" fill="#e8eef3" stroke="#070a0d" stroke-width="9" paint-order="stroke" letter-spacing="8">同じ雨が降る</text>
+    <text x="300" y="158" text-anchor="middle" font-size="19" fill="#a9bfcd" stroke="#070a0d" stroke-width="6" paint-order="stroke" letter-spacing="3">十月十七日、午後六時四十一分</text>
+    <text x="300" y="766" text-anchor="middle" font-size="17" fill="#c2d2dc" stroke="#070a0d" stroke-width="5" paint-order="stroke" letter-spacing="1">逃げても、止めても、その日は必ず燃える。</text>
+    <text x="300" y="792" text-anchor="middle" font-size="17" fill="#c2d2dc" stroke="#070a0d" stroke-width="5" paint-order="stroke" letter-spacing="1">動かせるのは、数ではなく名前だけだった。</text>
+  </g>
+
+  <!-- 帯 -->
+  <rect x="0" y="812" width="600" height="88" fill="#070a0d" opacity="0.94"/>
+  <text x="300" y="852" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="26" fill="#b7c9d6" letter-spacing="6">全10話・完結</text>
+  <text x="300" y="882" text-anchor="middle" font-family="'Yu Mincho','Hiragino Mincho ProN',serif" font-size="15" fill="#75899a" letter-spacing="2">繰り返す一日と、二十七人の名前の物語</text>
+</svg>
