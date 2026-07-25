@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="air" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d1119"/>
+      <stop offset="0.45" stop-color="#161d28"/>
+      <stop offset="1" stop-color="#232a33"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#3a3f46"/>
+      <stop offset="0.45" stop-color="#4a4f55"/>
+      <stop offset="1" stop-color="#33373d"/>
+    </linearGradient>
+    <linearGradient id="shaft" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#ffd79a" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ffd79a" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="topglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff3d6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff3d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#26405c"/>
+      <stop offset="1" stop-color="#16232f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 工場の空気 -->
+  <rect x="0" y="0" width="600" height="900" fill="url(#air)"/>
+
+  <!-- 壁(コンクリート面) -->
+  <rect x="52" y="236" width="496" height="576" fill="url(#wall)"/>
+  <!-- 型枠の継ぎ目 -->
+  <g stroke="#2b2f34" stroke-width="2" opacity="0.7">
+    <line x1="217" y1="236" x2="217" y2="812"/>
+    <line x1="382" y1="236" x2="382" y2="812"/>
+    <line x1="52" y1="470" x2="548" y2="470"/>
+    <line x1="52" y1="660" x2="548" y2="660"/>
+  </g>
+  <!-- 錆と汚れ -->
+  <g fill="#5a4a3a" opacity="0.16">
+    <ellipse cx="112" cy="560" rx="44" ry="86"/>
+    <ellipse cx="484" cy="704" rx="38" ry="64"/>
+    <ellipse cx="300" cy="292" rx="130" ry="34"/>
+  </g>
+  <!-- 天井の穴から差す光 -->
+  <path d="M300 0 L470 0 L560 812 L330 812 Z" fill="url(#shaft)"/>
+
+  <!-- 鉄骨のレール -->
+  <rect x="52" y="252" width="496" height="12" fill="#20242a"/>
+  <rect x="52" y="264" width="496" height="4" fill="#101317" opacity="0.8"/>
+
+  <!-- 課題「無名」= 白いホールドの一列 -->
+  <g fill="#f4f1e8">
+    <ellipse cx="196" cy="404" rx="15" ry="11" transform="rotate(-14 196 404)"/>
+    <ellipse cx="243" cy="386" rx="14" ry="10" transform="rotate(-16 243 386)"/>
+    <ellipse cx="289" cy="367" rx="13" ry="10" transform="rotate(-18 289 367)"/>
+    <ellipse cx="333" cy="348" rx="12" ry="9" transform="rotate(-20 333 348)"/>
+    <ellipse cx="372" cy="330" rx="11" ry="8" transform="rotate(-22 372 330)"/>
+  </g>
+  <!-- 最後の一手(ぽつんと離れた白) -->
+  <circle cx="470" cy="296" r="26" fill="url(#topglow)"/>
+  <ellipse cx="470" cy="296" rx="14" ry="11" fill="#ffffff" transform="rotate(-20 470 296)"/>
+
+  <!-- 色とりどりのホールド -->
+  <g>
+    <ellipse cx="140" cy="452" rx="17" ry="13" fill="#d8b43a" transform="rotate(12 140 452)"/>
+    <ellipse cx="430" cy="470" rx="16" ry="12" fill="#c8493c" transform="rotate(-8 430 470)"/>
+    <ellipse cx="196" cy="592" rx="15" ry="12" fill="#3f7fb5" transform="rotate(20 196 592)"/>
+    <ellipse cx="356" cy="556" rx="18" ry="13" fill="#4d9a5a" transform="rotate(-14 356 556)"/>
+    <ellipse cx="120" cy="612" rx="19" ry="14" fill="#dd8a34" transform="rotate(8 120 612)"/>
+    <ellipse cx="470" cy="600" rx="15" ry="11" fill="#8a6bb0" transform="rotate(16 470 600)"/>
+    <ellipse cx="300" cy="646" rx="20" ry="15" fill="#d8b43a" transform="rotate(-6 300 646)"/>
+    <ellipse cx="196" cy="700" rx="22" ry="16" fill="#c8493c" transform="rotate(10 196 700)"/>
+    <ellipse cx="404" cy="716" rx="21" ry="16" fill="#3f7fb5" transform="rotate(-12 404 716)"/>
+    <ellipse cx="286" cy="768" rx="24" ry="17" fill="#4d9a5a" transform="rotate(6 286 768)"/>
+    <ellipse cx="120" cy="770" rx="20" ry="15" fill="#8a6bb0" transform="rotate(-10 120 770)"/>
+    <ellipse cx="500" cy="530" rx="13" ry="10" fill="#d8b43a" transform="rotate(18 500 530)"/>
+  </g>
+  <!-- 鋳型枠の古いボルトの頭(足に使える) -->
+  <g fill="#6f6a60">
+    <circle cx="220" cy="600" r="5"/>
+    <circle cx="332" cy="690" r="5"/>
+    <circle cx="150" cy="520" r="5"/>
+    <circle cx="424" cy="640" r="5"/>
+  </g>
+
+  <!-- クライマーが触っているホールド -->
+  <g>
+    <ellipse cx="240" cy="510" rx="16" ry="12" fill="#d8b43a" transform="rotate(-10 240 510)"/>
+    <ellipse cx="252" cy="560" rx="13" ry="10" fill="#4d9a5a" transform="rotate(14 252 560)"/>
+    <ellipse cx="330" cy="716" rx="19" ry="14" fill="#dd8a34" transform="rotate(-8 330 716)"/>
+  </g>
+
+  <!-- クライマー(小柄な少女のシルエット。高く上げた左足の膝の上に立つ姿) -->
+  <g fill="#10141a" stroke="#10141a" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 左脚: 腰→膝(外へ張り出す)→高い位置の足 -->
+    <path d="M294 600 L234 590 L254 558" stroke-width="18" fill="none"/>
+    <!-- 右脚: 腰→膝→下の足 -->
+    <path d="M312 602 L336 658 L330 706" stroke-width="18" fill="none"/>
+    <!-- 胴 -->
+    <path d="M286 542 C278 562 278 584 288 602 C300 616 316 614 322 600 C330 580 326 558 316 542 Z"/>
+    <!-- 左腕: 肩→肘→ホールドを持つ手 -->
+    <path d="M288 548 L260 558 L244 518" stroke-width="13" fill="none"/>
+    <!-- 右腕: 肩→肘→上へ伸ばした手 -->
+    <path d="M316 546 L340 508 L352 470" stroke-width="13" fill="none"/>
+    <!-- 頭(見上げている) -->
+    <circle cx="312" cy="524" r="15"/>
+    <!-- 結んだ髪 -->
+    <path d="M298 514 C292 504 298 494 310 494 C322 494 330 504 326 514 C318 508 306 508 298 514 Z"/>
+    <path d="M296 522 C286 518 278 524 280 534 C288 534 294 530 296 522 Z"/>
+  </g>
+  <!-- 青いシューズ -->
+  <ellipse cx="253" cy="557" rx="11" ry="7" fill="#2f6ea8" transform="rotate(-40 253 557)"/>
+  <ellipse cx="330" cy="710" rx="11" ry="7" fill="#2f6ea8" transform="rotate(6 330 710)"/>
+  <!-- 光の縁取り(腕と太ももに一筋) -->
+  <g stroke="#ffd79a" stroke-linecap="round" fill="none">
+    <path d="M318 544 L339 510" stroke-width="2.5" opacity="0.6"/>
+    <path d="M295 596 L240 588" stroke-width="2.5" opacity="0.45"/>
+  </g>
+
+  <!-- 手が伸びる先を示す、かすかな軌跡 -->
+  <path d="M358 462 C394 414 430 352 462 314" stroke="#ffd79a" stroke-width="2" stroke-dasharray="5 9" opacity="0.45" fill="none"/>
+
+  <!-- マット -->
+  <rect x="30" y="812" width="540" height="46" fill="url(#mat)"/>
+  <g stroke="#0e1720" stroke-width="2" opacity="0.8">
+    <line x1="210" y1="812" x2="210" y2="858"/>
+    <line x1="390" y1="812" x2="390" y2="858"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'BIZ UDPGothic','Yu Gothic','Hiragino Sans','Noto Sans JP',sans-serif" text-anchor="middle">
+    <text x="300" y="120" font-size="76" font-weight="700" fill="#f7f3ea" letter-spacing="2">一手ぶん、上へ</text>
+    <text x="300" y="176" font-size="24" fill="#e8a94f" letter-spacing="5">百四十六センチのクライマー</text>
+    <text x="300" y="886" font-size="24" font-weight="600" fill="#e9e3d6" letter-spacing="8">全10話・完結</text>
+  </g>
+
+  <!-- 額縁 -->
+  <rect x="10" y="10" width="580" height="880" fill="none" stroke="#e8a94f" stroke-width="2" opacity="0.45" rx="6"/>
+</svg>
