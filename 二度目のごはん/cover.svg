@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e2128"/>
+      <stop offset="0.5" stop-color="#173038"/>
+      <stop offset="1" stop-color="#2a2a26"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b4c2f"/>
+      <stop offset="1" stop-color="#4a3320"/>
+    </linearGradient>
+    <linearGradient id="lampcone" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#ffcf87" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#ffcf87" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lampglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffe6b4" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffe6b4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8a14e" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e8a14e" stop-opacity="0.14"/>
+    </linearGradient>
+    <linearGradient id="pan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b9bcbd"/>
+      <stop offset="0.45" stop-color="#d8dbdc"/>
+      <stop offset="1" stop-color="#8e9294"/>
+    </linearGradient>
+    <linearGradient id="bowl" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3c4f57"/>
+      <stop offset="0.5" stop-color="#54696f"/>
+      <stop offset="1" stop-color="#33454c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 夕方の台所 -->
+  <rect x="0" y="0" width="600" height="900" fill="url(#room)"/>
+
+  <!-- 右上の窓(四時の光) -->
+  <g>
+    <rect x="418" y="196" width="132" height="150" fill="url(#win)"/>
+    <g stroke="#0e2128" stroke-width="5" opacity="0.75">
+      <line x1="484" y1="196" x2="484" y2="346"/>
+      <line x1="418" y1="271" x2="550" y2="271"/>
+      <rect x="418" y="196" width="132" height="150" fill="none"/>
+    </g>
+  </g>
+  <!-- 窓から差す光 -->
+  <path d="M418 346 L550 346 L520 700 L300 700 Z" fill="#e8a14e" opacity="0.06"/>
+
+  <!-- 吊り下げの裸電球 -->
+  <line x1="196" y1="196" x2="196" y2="286" stroke="#4a4a44" stroke-width="3"/>
+  <path d="M196 292 L96 660 L296 660 Z" fill="url(#lampcone)"/>
+  <circle cx="196" cy="296" r="34" fill="url(#lampglow)"/>
+  <circle cx="196" cy="296" r="9" fill="#ffe6b4"/>
+
+  <!-- 湯気(鍋から) -->
+  <g stroke="#f2ece0" fill="none" stroke-linecap="round" opacity="0.5">
+    <path d="M232 596 C216 566 246 546 230 514 C218 492 240 476 232 456" stroke-width="4"/>
+    <path d="M262 604 C250 578 274 562 262 538 C254 520 270 508 264 492" stroke-width="3" opacity="0.7"/>
+    <path d="M204 606 C194 584 212 570 202 550" stroke-width="3" opacity="0.55"/>
+  </g>
+
+  <!-- 台(調理台) -->
+  <rect x="42" y="660" width="516" height="26" fill="url(#board)"/>
+  <rect x="42" y="686" width="516" height="12" fill="#3a2717"/>
+  <rect x="42" y="698" width="516" height="88" fill="#241a10" opacity="0.85"/>
+
+  <!-- 焜炉の輪 -->
+  <ellipse cx="232" cy="656" rx="62" ry="14" fill="#14181a"/>
+  <ellipse cx="232" cy="652" rx="46" ry="10" fill="#2a2f31"/>
+
+  <!-- 小さな片手鍋(一杯ぶんしか入らない) -->
+  <g>
+    <!-- 柄(少し曲がっている) -->
+    <path d="M286 620 C312 615 330 616 344 622" stroke="#6a5a48" stroke-width="11" fill="none" stroke-linecap="round"/>
+    <!-- 胴 -->
+    <path d="M176 604 L182 640 C182 652 282 652 282 640 L288 604 Z" fill="url(#pan)"/>
+    <!-- 口の縁 -->
+    <ellipse cx="232" cy="604" rx="56" ry="15" fill="#e6e9ea"/>
+    <ellipse cx="232" cy="606" rx="47" ry="11" fill="#6d5a3c"/>
+    <!-- 汁の面 -->
+    <ellipse cx="232" cy="608" rx="42" ry="9" fill="#a9803f"/>
+    <!-- 具(大根・葱・豆腐) -->
+    <ellipse cx="218" cy="606" rx="9" ry="4" fill="#f0ece1"/>
+    <ellipse cx="246" cy="610" rx="7" ry="3" fill="#f4f1e6"/>
+    <ellipse cx="234" cy="604" rx="6" ry="3" fill="#87a85e"/>
+    <ellipse cx="252" cy="604" rx="5" ry="2.5" fill="#87a85e"/>
+    <!-- へこみの影 -->
+    <path d="M196 616 C204 636 210 642 216 646" stroke="#8e9294" stroke-width="3" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- 椀と箸 -->
+  <g>
+    <path d="M394 618 L402 654 C402 668 484 668 484 654 L492 618 Z" fill="url(#bowl)"/>
+    <ellipse cx="443" cy="618" rx="49" ry="13" fill="#6f858c"/>
+    <ellipse cx="443" cy="620" rx="41" ry="10" fill="#20323a"/>
+    <ellipse cx="443" cy="621" rx="36" ry="8" fill="#b98a45" opacity="0.9"/>
+    <path d="M392 612 L502 604" stroke="#c9a06a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M392 620 L502 612" stroke="#b98f5d" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- まな板と、今日の残り -->
+  <g>
+    <rect x="82" y="628" width="118" height="30" rx="5" fill="#a9865a"/>
+    <rect x="82" y="628" width="118" height="8" rx="4" fill="#c19d6d"/>
+    <!-- 大根の尻尾 -->
+    <path d="M96 646 C112 640 130 640 146 646 C130 652 112 652 96 646 Z" fill="#f2efe4"/>
+    <!-- 葱の根 -->
+    <path d="M152 640 L188 636" stroke="#eae6d6" stroke-width="6" stroke-linecap="round"/>
+    <path d="M152 640 C146 638 142 642 140 646" stroke="#e6e2d0" stroke-width="2.5" fill="none"/>
+    <path d="M170 636 L188 634" stroke="#87a85e" stroke-width="5" stroke-linecap="round"/>
+    <!-- 豆腐の欠け -->
+    <path d="M104 656 L124 654 L120 664 L100 664 Z" fill="#f6f4ea"/>
+  </g>
+
+  <!-- 丸椅子(帰ってきた子が座って待つ場所) -->
+  <g fill="#1b140d">
+    <ellipse cx="452" cy="742" rx="52" ry="14"/>
+    <rect x="446" y="748" width="12" height="52"/>
+    <path d="M418 796 L486 796 L494 812 L410 812 Z"/>
+  </g>
+
+  <!-- 貼り紙(壁の右下) -->
+  <g transform="rotate(-3 500 432)">
+    <rect x="452" y="390" width="96" height="70" fill="#efe7d4" opacity="0.92"/>
+    <g stroke="#7a6a52" stroke-width="2.5" opacity="0.75">
+      <line x1="462" y1="408" x2="536" y2="408"/>
+      <line x1="462" y1="420" x2="536" y2="420"/>
+      <line x1="462" y1="432" x2="520" y2="432"/>
+      <line x1="462" y1="444" x2="530" y2="444"/>
+    </g>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" text-anchor="middle">
+    <text x="300" y="126" font-size="62" fill="#f6efe2" letter-spacing="3" font-weight="600">二度目のごはん</text>
+    <text x="300" y="180" font-size="23" fill="#e8a14e" letter-spacing="3">思い出ごはん再現屋・朔と清一</text>
+    <text x="300" y="866" font-size="26" fill="#f2ead9" letter-spacing="8">全10話・完結</text>
+  </g>
+
+  <!-- 額縁 -->
+  <rect x="10" y="10" width="580" height="880" fill="none" stroke="#e8a14e" stroke-width="2" opacity="0.45" rx="6"/>
+</svg>
