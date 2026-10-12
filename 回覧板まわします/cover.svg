@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f3f63"/>
+      <stop offset="0.45" stop-color="#8a6f8f"/>
+      <stop offset="0.8" stop-color="#e9a77f"/>
+      <stop offset="1" stop-color="#f4cf9c"/>
+    </linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b3a4f"/>
+      <stop offset="1" stop-color="#26253a"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b98a52"/>
+      <stop offset="1" stop-color="#8c6235"/>
+    </linearGradient>
+    <linearGradient id="tatami" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9b97a"/>
+      <stop offset="1" stop-color="#8f9157"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd98a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd98a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="igusa" width="600" height="6" patternUnits="userSpaceOnUse">
+      <rect width="600" height="6" fill="url(#tatami)"/>
+      <line x1="0" y1="5.5" x2="600" y2="5.5" stroke="#7d7f4a" stroke-width="1" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <!-- 夕暮れの空 -->
+  <rect width="600" height="900" fill="url(#sky)"/>
+  <circle cx="470" cy="250" r="3" fill="#fff6dc" opacity="0.8"/>
+  <circle cx="120" cy="210" r="2" fill="#fff6dc" opacity="0.6"/>
+  <circle cx="380" cy="190" r="1.6" fill="#fff6dc" opacity="0.6"/>
+
+  <!-- 坂の町(左下から右上へのぼる坂) -->
+  <path d="M0 560 L0 470 L70 450 L70 420 L120 400 L120 430 L170 410 L170 380 L230 355 L230 385 L280 362 L280 330 L340 305 L340 335 L390 312 L390 285 L450 262 L450 292 L500 270 L500 245 L600 210 L600 560 Z" fill="url(#hill)"/>
+  <!-- 家々の壁 -->
+  <g fill="#47455e">
+    <rect x="66" y="452" width="58" height="44"/>
+    <rect x="166" y="412" width="68" height="44"/>
+    <rect x="276" y="364" width="68" height="44"/>
+    <rect x="386" y="314" width="68" height="44"/>
+    <rect x="496" y="272" width="68" height="44"/>
+  </g>
+  <!-- 家々の屋根の線 -->
+  <g fill="#1f1e30">
+    <path d="M60 452 L95 428 L130 452 Z"/>
+    <path d="M160 412 L200 386 L240 412 Z"/>
+    <path d="M270 364 L310 338 L350 364 Z"/>
+    <path d="M380 314 L420 290 L460 314 Z"/>
+    <path d="M490 272 L530 248 L570 272 Z"/>
+  </g>
+  <!-- 灯った窓 -->
+  <g>
+    <circle cx="95" cy="470" r="22" fill="url(#glow)"/>
+    <rect x="86" y="462" width="18" height="15" fill="#ffd27a"/>
+    <circle cx="200" cy="430" r="22" fill="url(#glow)"/>
+    <rect x="191" y="422" width="18" height="15" fill="#ffd27a"/>
+    <circle cx="310" cy="382" r="22" fill="url(#glow)"/>
+    <rect x="301" y="374" width="18" height="15" fill="#ffd27a"/>
+    <circle cx="420" cy="333" r="22" fill="url(#glow)"/>
+    <rect x="411" y="325" width="18" height="15" fill="#ffd27a"/>
+    <circle cx="530" cy="292" r="22" fill="url(#glow)"/>
+    <rect x="521" y="284" width="18" height="15" fill="#ffd27a"/>
+  </g>
+  <!-- 坂道 -->
+  <path d="M0 560 L600 300 L600 330 L0 600 Z" fill="#4a4660" opacity="0.7"/>
+
+  <!-- 畳の床 -->
+  <rect x="0" y="560" width="600" height="340" fill="url(#igusa)"/>
+  <rect x="0" y="560" width="600" height="14" fill="#2f3a63"/>
+  <line x1="0" y1="567" x2="600" y2="567" stroke="#4d5a8a" stroke-width="1"/>
+
+  <!-- 回覧板 -->
+  <g transform="rotate(-6 300 640)">
+    <rect x="160" y="470" width="280" height="350" rx="10" fill="#5a3d20" opacity="0.35" transform="translate(8 10)"/>
+    <rect x="160" y="470" width="280" height="350" rx="10" fill="url(#board)"/>
+    <rect x="160" y="470" width="280" height="350" rx="10" fill="none" stroke="#6e4a26" stroke-width="3"/>
+    <!-- 用紙 -->
+    <rect x="182" y="505" width="236" height="296" fill="#fbf6ea"/>
+    <!-- クリップ -->
+    <rect x="245" y="478" width="110" height="34" rx="6" fill="#9aa1a8"/>
+    <rect x="255" y="485" width="90" height="10" rx="4" fill="#c9cfd4"/>
+    <!-- 見出し -->
+    <text x="300" y="548" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="26" fill="#3a2f28" text-anchor="middle" letter-spacing="10" font-weight="600">回　覧</text>
+    <text x="300" y="574" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="13" fill="#6b5d50" text-anchor="middle" letter-spacing="3">三丁目四班</text>
+    <!-- 本文の罫 -->
+    <g stroke="#cfc4b0" stroke-width="1.5">
+      <line x1="200" y1="596" x2="400" y2="596"/>
+      <line x1="200" y1="614" x2="400" y2="614"/>
+      <line x1="200" y1="632" x2="370" y2="632"/>
+    </g>
+    <!-- 確認印の欄 -->
+    <g stroke="#9c8f7c" stroke-width="1.2" fill="none">
+      <rect x="200" y="652" width="200" height="60"/>
+      <line x1="233" y1="652" x2="233" y2="712"/>
+      <line x1="266" y1="652" x2="266" y2="712"/>
+      <line x1="300" y1="652" x2="300" y2="712"/>
+      <line x1="333" y1="652" x2="333" y2="712"/>
+      <line x1="366" y1="652" x2="366" y2="712"/>
+    </g>
+    <g fill="none" stroke="#c8403a" stroke-width="2.2" opacity="0.85">
+      <circle cx="216" cy="682" r="11"/>
+      <circle cx="249" cy="683" r="11"/>
+      <circle cx="283" cy="681" r="11"/>
+      <circle cx="316" cy="683" r="11"/>
+      <circle cx="350" cy="682" r="11"/>
+      <circle cx="383" cy="682" r="11"/>
+    </g>
+    <!-- 付箋(黄と水色) -->
+    <g transform="rotate(4 270 750)">
+      <rect x="208" y="722" width="104" height="72" fill="#f6d65a"/>
+      <g stroke="#9a8a4a" stroke-width="1.6" stroke-linecap="round">
+        <line x1="220" y1="742" x2="298" y2="742"/>
+        <line x1="220" y1="757" x2="290" y2="757"/>
+        <line x1="220" y1="772" x2="270" y2="772"/>
+      </g>
+    </g>
+    <g transform="rotate(-5 350 755)">
+      <rect x="300" y="730" width="98" height="68" fill="#9fd3e6"/>
+      <g stroke="#5f8fa1" stroke-width="1.6" stroke-linecap="round">
+        <line x1="312" y1="750" x2="386" y2="750"/>
+        <line x1="312" y1="765" x2="372" y2="765"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 紫陽花の小さな房(左下) -->
+  <g opacity="0.95">
+    <circle cx="70" cy="800" r="11" fill="#6f86c9"/>
+    <circle cx="88" cy="790" r="11" fill="#8a9fdc"/>
+    <circle cx="84" cy="812" r="11" fill="#5f75b8"/>
+    <circle cx="100" cy="806" r="10" fill="#7d93d4"/>
+    <circle cx="62" cy="818" r="10" fill="#8a9fdc"/>
+    <path d="M80 826 Q 70 850 60 870" stroke="#4d6a3a" stroke-width="4" fill="none"/>
+    <ellipse cx="62" cy="850" rx="16" ry="7" fill="#5b7b43" transform="rotate(-30 62 850)"/>
+  </g>
+  <!-- 拍子木(右下) -->
+  <g transform="rotate(18 510 800)">
+    <rect x="470" y="780" width="90" height="16" rx="2" fill="#e8dcc0" stroke="#a8977a" stroke-width="1.5"/>
+    <rect x="470" y="800" width="90" height="16" rx="2" fill="#efe4c9" stroke="#a8977a" stroke-width="1.5"/>
+    <path d="M470 788 Q 455 798 470 808" stroke="#7a3b2a" stroke-width="2.5" fill="none"/>
+  </g>
+
+  <!-- タイトル -->
+  <g font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" text-anchor="middle">
+    <text x="300" y="118" font-size="56" fill="#fbf4e6" letter-spacing="4" font-weight="600">回覧板、まわします</text>
+    <text x="300" y="168" font-size="22" fill="#f4cf9c" letter-spacing="3">柚木町三丁目四班・一年だけの班長</text>
+    <text x="300" y="872" font-size="26" fill="#3a3a22" letter-spacing="8">全10話・完結</text>
+  </g>
+</svg>

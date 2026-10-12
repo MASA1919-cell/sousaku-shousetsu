@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe6e3"/>
+      <stop offset="0.45" stop-color="#c9d4cc"/>
+      <stop offset="1" stop-color="#8fa892"/>
+    </linearGradient>
+    <linearGradient id="hillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fb8a3"/>
+      <stop offset="1" stop-color="#7d9a80"/>
+    </linearGradient>
+    <linearGradient id="hillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6f9370"/>
+      <stop offset="1" stop-color="#4f7452"/>
+    </linearGradient>
+    <linearGradient id="hillNear" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4b7150"/>
+      <stop offset="1" stop-color="#2f4d35"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef2ef" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#eef2ef" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#eef2ef" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbf8ef"/>
+      <stop offset="1" stop-color="#efe9d8"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8a04a"/>
+      <stop offset="1" stop-color="#8d7a2c"/>
+    </linearGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5a6b68"/>
+      <stop offset="0.5" stop-color="#8a9c98"/>
+      <stop offset="1" stop-color="#4c5b58"/>
+    </linearGradient>
+    <linearGradient id="bottom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e2f24" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1e2f24" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="4" dy="8" result="o"/>
+      <feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- 朝霧の空 -->
+  <rect width="600" height="900" fill="url(#sky)"/>
+
+  <!-- 遠くの山と茶畑の段々 -->
+  <path d="M0 330 C90 280 160 300 240 262 C330 220 420 250 520 214 L600 200 L600 480 L0 480 Z" fill="url(#hillFar)"/>
+  <path d="M0 400 C110 350 200 372 300 336 C390 304 470 330 600 300 L600 560 L0 560 Z" fill="url(#hillMid)"/>
+  <g stroke="#3f6446" stroke-width="3" fill="none" opacity="0.5">
+    <path d="M0 425 C110 378 200 398 300 364 C390 332 470 356 600 328"/>
+    <path d="M0 450 C110 404 200 424 300 390 C390 358 470 382 600 354"/>
+    <path d="M0 475 C110 430 200 450 300 416 C390 384 470 408 600 380"/>
+    <path d="M0 500 C110 456 200 476 300 442 C390 410 470 434 600 406"/>
+    <path d="M0 525 C110 482 200 502 300 468 C390 436 470 460 600 432"/>
+  </g>
+  <path d="M0 520 C120 470 220 500 330 456 C430 416 520 440 600 410 L600 720 L0 720 Z" fill="url(#hillNear)"/>
+  <g stroke="#243d2a" stroke-width="3.5" fill="none" opacity="0.55">
+    <path d="M0 548 C120 500 220 530 330 486 C430 446 520 470 600 440"/>
+    <path d="M0 578 C120 530 220 560 330 516 C430 476 520 500 600 470"/>
+    <path d="M0 608 C120 560 220 590 330 546 C430 506 520 530 600 500"/>
+    <path d="M0 638 C120 590 220 620 330 576 C430 536 520 560 600 530"/>
+  </g>
+
+  <!-- 霧の帯 -->
+  <rect x="-40" y="300" width="680" height="170" fill="url(#fog)" filter="url(#soft)"/>
+  <ellipse cx="180" cy="392" rx="240" ry="34" fill="#eef2ef" opacity="0.55" filter="url(#soft)"/>
+  <ellipse cx="460" cy="470" rx="220" ry="28" fill="#eef2ef" opacity="0.45" filter="url(#soft)"/>
+
+  <!-- 手前の暗い机 -->
+  <rect x="0" y="660" width="600" height="240" fill="#2a3a30"/>
+  <rect x="0" y="600" width="600" height="300" fill="url(#bottom)"/>
+
+  <!-- 書類(登記申請書) -->
+  <g filter="url(#shadow)">
+    <g transform="rotate(-4 300 700)">
+      <rect x="150" y="560" width="330" height="270" rx="3" fill="url(#paper)"/>
+      <g stroke="#b7ae94" stroke-width="1.6" opacity="0.9">
+        <line x1="180" y1="598" x2="450" y2="598"/>
+        <line x1="180" y1="626" x2="450" y2="626"/>
+        <line x1="180" y1="654" x2="400" y2="654"/>
+        <line x1="180" y1="682" x2="450" y2="682"/>
+        <line x1="180" y1="710" x2="330" y2="710"/>
+      </g>
+      <!-- 署名欄 -->
+      <rect x="250" y="748" width="200" height="50" fill="none" stroke="#8c8368" stroke-width="1.8"/>
+      <text x="186" y="782" font-family="serif" font-size="16" fill="#6c6551">署名</text>
+      <!-- 左に傾いた細い署名 -->
+      <text x="440" y="784" transform="skewX(-12)" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="26" fill="#2b2b33" letter-spacing="6">桐生菜穂</text>
+      <!-- 朱肉 -->
+      <circle cx="426" cy="606" r="12" fill="none" stroke="#c0392b" stroke-width="2.4" opacity="0.85"/>
+      <text x="426" y="611" font-family="serif" font-size="12" fill="#c0392b" text-anchor="middle" opacity="0.85">印</text>
+    </g>
+  </g>
+
+  <!-- 左手とペン(ペン先を署名欄の書き出しに置く) -->
+  <g transform="translate(140 754) rotate(15)" stroke="#b78e6d" stroke-width="2" stroke-linejoin="round">
+    <!-- 手のひら -->
+    <path d="M-104 -2 C-110 -28 -80 -44 -46 -38 L-8 -28 L-6 46 C-40 62 -96 58 -106 32 Z" fill="#e8c9a8"/>
+    <!-- 曲げた中指・薬指・小指 -->
+    <rect x="-38" y="24" width="52" height="20" rx="10" fill="#e8c9a8"/>
+    <rect x="-46" y="40" width="48" height="18" rx="9" fill="#e8c9a8"/>
+    <rect x="-54" y="54" width="42" height="16" rx="8" fill="#e8c9a8"/>
+    <!-- ペン -->
+    <g stroke="none">
+      <rect x="-34" y="-5" width="126" height="10" rx="3" fill="#2f3b45"/>
+      <rect x="-34" y="-5" width="22" height="10" rx="3" fill="#8fa2b0"/>
+      <path d="M92 -5 L92 5 L106 0 Z" fill="#c8ccd0"/>
+    </g>
+    <!-- 親指(ペンの下側) -->
+    <rect x="-52" y="8" width="62" height="18" rx="9" fill="#e8c9a8"/>
+    <circle cx="10" cy="15" r="9" fill="#e8c9a8"/>
+    <!-- 人差し指(ペンの上側) -->
+    <rect x="-46" y="-26" width="66" height="20" rx="10" fill="#e8c9a8"/>
+    <circle cx="20" cy="-12" r="10" fill="#e8c9a8"/>
+  </g>
+
+  <!-- 番茶の湯呑み -->
+  <g transform="translate(470 760)">
+    <ellipse cx="0" cy="70" rx="46" ry="10" fill="#111d16" opacity="0.5"/>
+    <path d="M-42 0 C-42 40 -34 66 0 66 C34 66 42 40 42 0 Z" fill="url(#cup)"/>
+    <ellipse cx="0" cy="0" rx="42" ry="11" fill="#3c4a47"/>
+    <ellipse cx="0" cy="1" rx="36" ry="8" fill="url(#tea)"/>
+    <!-- 湯気 -->
+    <g stroke="#eef2ef" stroke-width="2.5" fill="none" opacity="0.7" stroke-linecap="round">
+      <path d="M-14 -16 c-6 -12 6 -18 0 -30 c-4 -8 2 -14 6 -18"/>
+      <path d="M6 -14 c-6 -12 6 -18 0 -30 c-4 -8 2 -14 6 -18"/>
+    </g>
+  </g>
+
+  <!-- タイトル(縦書き) -->
+  <g filter="url(#shadow)">
+    <rect x="452" y="52" width="104" height="450" rx="6" fill="#1e2f24" opacity="0.88"/>
+    <text x="504" y="92" writing-mode="tb" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="74" font-weight="700" fill="#f4efe1" text-anchor="start" letter-spacing="4">左手の署名</text>
+  </g>
+
+  <!-- サブタイトル(縦書き2行) -->
+  <text x="412" y="70" writing-mode="tb" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="21" fill="#1e2f24" letter-spacing="2">二十二年前に消えた妹を</text>
+  <text x="378" y="70" writing-mode="tb" font-family="'Yu Mincho','Hiragino Mincho ProN','Noto Serif JP',serif" font-size="21" fill="#1e2f24" letter-spacing="2">司法書士事務所の二人が探す</text>
+
+  <!-- 完結表示 -->
+  <g transform="translate(44 44)">
+    <rect x="0" y="0" width="172" height="40" rx="20" fill="#f4efe1" stroke="#1e2f24" stroke-width="2"/>
+    <text x="86" y="27" font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#1e2f24" text-anchor="middle" letter-spacing="2">全10話・完結</text>
+  </g>
+
+  <!-- ジャンル札 -->
+  <text x="44" y="118" font-family="'Yu Gothic','Hiragino Sans','Noto Sans JP',sans-serif" font-size="15" fill="#2f4d35" letter-spacing="3">長編ミステリ／バディ</text>
+</svg>
